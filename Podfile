@@ -12,5 +12,6 @@ target 'Fresh Wave - Agent' do
   pod 'AEOTPTextField'
   pod 'RxSwift', '6.5.0'
   pod 'RxCocoa', '6.5.0'
+  pod 'SideMenu'
 
 end
