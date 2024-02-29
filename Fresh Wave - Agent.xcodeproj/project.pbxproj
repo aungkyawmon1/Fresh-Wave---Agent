@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C276DF12B8F5DBC00A9103C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C276DF02B8F5DBC00A9103C /* ProfileViewModel.swift */; };
 		6C5AA68B2B7E17DA0088C3B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5AA68A2B7E17DA0088C3B8 /* AppDelegate.swift */; };
 		6C5AA68D2B7E17DA0088C3B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5AA68C2B7E17DA0088C3B8 /* SceneDelegate.swift */; };
 		6C5AA68F2B7E17DA0088C3B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5AA68E2B7E17DA0088C3B8 /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		1B42DBB18172097FDF425D2F /* Pods_Fresh_Wave___Agent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Fresh_Wave___Agent.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5323D5090CA3F37AB9BD83 /* Pods-Fresh Wave - Agent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fresh Wave - Agent.debug.xcconfig"; path = "Target Support Files/Pods-Fresh Wave - Agent/Pods-Fresh Wave - Agent.debug.xcconfig"; sourceTree = "<group>"; };
+		6C276DF02B8F5DBC00A9103C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		6C5AA6872B7E17DA0088C3B8 /* Fresh Wave - Agent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fresh Wave - Agent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5AA68A2B7E17DA0088C3B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C5AA68C2B7E17DA0088C3B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6C276DEE2B8F5D2100A9103C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		6C276DEF2B8F5DA800A9103C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6C276DF02B8F5DBC00A9103C /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		6C5AA67E2B7E17DA0088C3B8 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +116,7 @@
 		6C5AA6892B7E17DA0088C3B8 /* Fresh Wave - Agent */ = {
 			isa = PBXGroup;
 			children = (
+				6C276DEE2B8F5D2100A9103C /* Managers */,
 				6CBB885F2B8E295500CC175A /* Components */,
 				6CBB88572B8E208F00CC175A /* Utils */,
 				6CBB88492B8B7B6E00CC175A /* Base */,
@@ -166,6 +184,7 @@
 		6CBB883A2B87989600CC175A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				6C276DEF2B8F5DA800A9103C /* ViewModel */,
 				6CBB883B2B8798A500CC175A /* View */,
 			);
 			path = Profile;
@@ -388,6 +407,7 @@
 				6CBB88642B8E34BB00CC175A /* UIApplication+Extension.swift in Sources */,
 				6CBB88332B8796D100CC175A /* HomeVC.swift in Sources */,
 				6CBB884D2B8B7BE400CC175A /* BaseViewModel.swift in Sources */,
+				6C276DF12B8F5DBC00A9103C /* ProfileViewModel.swift in Sources */,
 				6CBB884B2B8B7B9700CC175A /* BaseViewController.swift in Sources */,
 				6C5AA68B2B7E17DA0088C3B8 /* AppDelegate.swift in Sources */,
 				6CBB885A2B8E20A800CC175A /* UIView+Extension.swift in Sources */,

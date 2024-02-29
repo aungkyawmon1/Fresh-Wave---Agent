@@ -21,16 +21,17 @@ class BaseViewModel {
     func bindViewModel(in viewController: BaseViewController? = nil) {
         self.viewController = viewController
         
-//        loadingPublishRelay.bind {
-//            if $0 {
-//                viewController?.showLoading()
-//            } else {
-//                viewController?.hideLoading()
-//            }
-//        }.disposed(by: disposableBag)
         
-//        errorPublishRelay.bind {
-//            viewController?.showAlert(title: "Error", message: $0)
-//        }.disposed(by: disposableBag)
+        loadingPublishRelay.subscribe {
+            if $0 {
+                viewController?.showLoading()
+            } else {
+                viewController?.hideLoading()
+            }
+        }.disposed(by: disposableBag)
+        
+        errorPublishRelay.subscribe {
+            viewController?.showAlert(title: "Error", message: $0)
+        }.disposed(by: disposableBag)
     }
 }

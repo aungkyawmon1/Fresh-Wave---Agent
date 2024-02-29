@@ -35,7 +35,7 @@ class TabVC: UITabBarController {
         let navHome = UINavigationController(rootViewController: home)
         navHome.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), tag: 0)
         
-        let profile = ProfileVC()
+        let profile = ProfileVC(viewModel: ProfileViewModel())
         let navProfile = UINavigationController(rootViewController: profile)
         navProfile.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.fill"), tag: 3)
         
