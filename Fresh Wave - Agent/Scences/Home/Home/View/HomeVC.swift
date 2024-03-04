@@ -8,6 +8,9 @@
 import UIKit
 
 class HomeVC: BaseViewController {
+    
+    @IBOutlet weak var orderState: UISegmentedControl!
+    @IBOutlet weak var orderTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,4 +24,6 @@ class HomeVC: BaseViewController {
         }
     }
 
+    @IBAction func statusChange(_ sender: UISegmentedControl) {
+    }
 }
