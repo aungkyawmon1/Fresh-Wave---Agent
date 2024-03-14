@@ -25,6 +25,13 @@ class ProfileVC: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    
     }
+    
+    override func setupUI() {
+        title = "Profile"
+    }
+    
+    
 
 }
